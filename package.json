@@ -1,7 +1,7 @@
 {
   "name": "vue-i18n-outputloader",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.4",
+  "description": "Output i18n message into file from <i18n> for Vue-I18n",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"
