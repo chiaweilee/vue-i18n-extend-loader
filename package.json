@@ -1,0 +1,22 @@
+{
+  "name": "vue-i18n-outputloader",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiaweilee/vue-i18n-export-loader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiaweilee/vue-i18n-export-loader/issues"
+  },
+  "homepage": "https://github.com/chiaweilee/vue-i18n-export-loader#readme"
+}
