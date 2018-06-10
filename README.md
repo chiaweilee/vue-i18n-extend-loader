@@ -11,7 +11,8 @@ if (process.env.NODE_ENV !== 'production') {
   vueLoaderConfig.loaders['i18n'] = [{
     loader: 'vue-i18ndev-outputloader',
     options: {
-      dir: 'myLangDir' // dir name to output
+      dir: 'myLangDir', // dir name to output
+      build: process.env.NODE_ENV === 'production' // build lang, bool
     }
   }]
 }
