@@ -1,7 +1,7 @@
 {
-  "name": "vue-i18n-extend-loader",
+  "name": "vue-i18n-loader2",
   "version": "0.1.0",
-  "description": "",
+  "description": "extend of vue-i18n-loader",
   "main": "lib/loader.js",
   "directories": {
     "lib": "lib"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chiaweilee/vue-i18n-extend-loader.git"
+    "url": "git+https://github.com/chiaweilee/vue-i18n-loader2.git"
   },
   "author": "",
   "license": "ISC",

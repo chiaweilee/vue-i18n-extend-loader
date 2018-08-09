@@ -1,4 +1,4 @@
-# vue-i18n-extend-loader
+# vue-i18n-loader2
 🌍 inspire by vue-i18n-loader
 
 ### In dev mode
@@ -9,12 +9,12 @@ It works just like 'vue-i18n-loader'
 
 - 'i18n' tag will be removed
 - content in 'i18n' tag will be merge into target json file(s)
-- support using 'extend' to merge cover content in 'i18n' tag
-- support using 'extend' to transfer content into different language
+- support using 'extend' to cover content in 'i18n' tag
+- support using 'extend' to translate content into different language
 
 # Install
 
-> npm install vue-i18n-extend-loader --save-dev
+> npm install vue-i18n-loader2 --save-dev
 
 # Usage
 
@@ -24,7 +24,7 @@ It works just like 'vue-i18n-loader'
 <i18>
 {
     "zh-cn": {
-        "你好": "你好"
+        "Hello": "Hello"
     }
 }
 </i18>
@@ -40,10 +40,10 @@ vueLoaderConfig.loaders['i18n'] = [{
     character: 'utf-8', // default: utf-8
     extend: {
       'zh-cn': {
-        '你好': '您好'  
+        'Hello': '你们好'  
       },
       en: {
-        '你好': 'Hello'
+        'Hello': 'Hello everyone'
       }
     }
   }
@@ -55,13 +55,13 @@ vueLoaderConfig.loaders['i18n'] = [{
 - zh-cn.json
 
 ```json
-{"你好": "您好"}
+{"Hello": "你们好"}
 ```
 
 - en.json
 
 ```json
-{"你好": "Hello"}
+{"Hello": "Hello everyone"}
 ```
 
 * Import these json file to project with 'vue-i18n' or 'vue-i18n-async'
