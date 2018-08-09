@@ -1,8 +1,8 @@
 {
-  "name": "vue-i18n-devfile",
-  "version": "0.0.10",
-  "description": "Output i18n message into file from <i18n> for Vue-I18n",
-  "main": "lib/index.js",
+  "name": "vue-i18n-extend-loader",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/loader.js",
   "directories": {
     "lib": "lib"
   },
@@ -11,12 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chiaweilee/vue-i18n-export-loader.git"
+    "url": "git+https://github.com/chiaweilee/vue-i18n-extend-loader.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chiaweilee/vue-i18n-export-loader/issues"
   },
-  "homepage": "https://github.com/chiaweilee/vue-i18n-export-loader#readme"
+  "homepage": "https://github.com/chiaweilee/vue-i18n-export-loader#readme",
+  "devDependencies": {
+    "ansicolors": "^0.3.2",
+    "fs": "^0.0.1-security",
+    "loader-utils": "^1.1.0",
+    "path": "^0.12.7"
+  }
 }
