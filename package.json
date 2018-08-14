@@ -1,6 +1,6 @@
 {
   "name": "vue-i18n-loader2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "extend of vue-i18n-loader",
   "main": "lib/loader.js",
   "directories": {
@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/chiaweilee/vue-i18n-export-loader#readme",
   "devDependencies": {
-    "ansicolors": "^0.3.2",
     "fs": "^0.0.1-security",
     "loader-utils": "^1.1.0",
     "path": "^0.12.7"
+  },
+  "dependencies": {
+    "colors": "^1.3.1"
   }
 }
