@@ -1,6 +1,6 @@
 {
   "name": "vue-i18n-loader2",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "extend of vue-i18n-loader",
   "main": "lib/loader.js",
   "directories": {
