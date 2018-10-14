@@ -67,3 +67,13 @@ vueLoaderConfig.loaders['i18n'] = [{
 * Import these json file to project with 'vue-i18n' or 'vue-i18n-async'
 
 - vue-i18n-async https://github.com/chiaweilee/vue-i18n-async
+
+### Important
+
+*Can not use english '!' in lang package*
+
+Below not work.
+
+```json
+{"Hello": "你们好!"}
+```
