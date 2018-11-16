@@ -1,38 +1,25 @@
 # vue-i18n-loader2
 🌍 inspire by vue-i18n-loader
 
-### Important ⚠️
+### issue TODO ⚠️
 
-*issue TODO*
-
-* not support `!`
+1. NOT SUPPORT `!`
 
 due loader, e.g `vue-loader!vue-i18n-loader?{'a': 'a!'}`
 
-Below not work.
-
-```json
-{"Hello": "你们好!"}
-```
-
-* you may need build twice
-
-due webpack work async, you lang file may loaded into project at first time.
-
-the first time you build, all locale in components will be extracted and merged, but not loaded into webpack fully.
-
-the second time you build, it's all ok.
-
 ### In dev mode
 
-It works just like 'vue-i18n-loader'
+It works just like [@kazupon/vue-i18n-loader](https://github.com/kazupon/vue-i18n-loader)
 
 ### In prod mode
+
+when you `run build`
 
 - 'i18n' tag will be removed
 - content in 'i18n' tag will be merge into target json file(s)
 - support using 'extend' to cover content in 'i18n' tag
 - support using 'extend' to translate content into different language
+- then, try load your locale file with `vue-i18n`
 
 # Install
 
@@ -52,21 +39,27 @@ It works just like 'vue-i18n-loader'
 </i18>
 ```
 
-- in webpack config
+- vue webpack config (vue-cli 2.9.x)
 
 ```javascript
 vueLoaderConfig.loaders['i18n'] = [{
-  loader: 'vue-i18n-extend-loader',
+  loader: 'vue-i18n-loader2',
   options: {
-    target: 'src/lang', // require
+    quite: false, // ignore different value merged warning
+    target: 'src/lang', // extract target
     character: 'utf-8', // default: utf-8
+    mirror: { // clone locale
+        source: 'zh-cn',
+        target: 'en'
+    },
     extend: {
       'zh-cn': {
         'Hello': '你们好'  
       },
       en: {
         'Hello': 'Hello everyone'
-      }
+      },
+      jp: require('../src/lang-extend/jp-translate-from-others.json')
     }
   }
 }]
@@ -85,7 +78,3 @@ vueLoaderConfig.loaders['i18n'] = [{
 ```json
 {"Hello": "Hello everyone"}
 ```
-
-* Import these json file to project with 'vue-i18n' or 'vue-i18n-async'
-
-- vue-i18n-async https://github.com/chiaweilee/vue-i18n-async
