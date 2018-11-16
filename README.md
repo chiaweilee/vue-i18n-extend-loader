@@ -1,6 +1,24 @@
 # vue-i18n-loader2
 🌍 inspire by vue-i18n-loader
 
+### Important ⚠️
+
+*issue TODO*
+
+* not support `!`
+
+due loader, e.g `vue-loader!vue-i18n-loader?{'a': 'a!'}`
+
+Below not work.
+
+```json
+{"Hello": "你们好!"}
+```
+
+* you may need build twice
+
+due webpack work async, you lang file may loaded into project at first time.
+
 ### In dev mode
 
 It works just like 'vue-i18n-loader'
@@ -67,13 +85,3 @@ vueLoaderConfig.loaders['i18n'] = [{
 * Import these json file to project with 'vue-i18n' or 'vue-i18n-async'
 
 - vue-i18n-async https://github.com/chiaweilee/vue-i18n-async
-
-### Important
-
-*Can not use english '!' in lang package*
-
-Below not work.
-
-```json
-{"Hello": "你们好!"}
-```
