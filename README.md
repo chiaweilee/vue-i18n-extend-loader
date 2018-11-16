@@ -19,6 +19,10 @@ Below not work.
 
 due webpack work async, you lang file may loaded into project at first time.
 
+the first time you build, all locale in components will be extracted and merged, but not loaded into webpack fully.
+
+the second time you build, it's all ok.
+
 ### In dev mode
 
 It works just like 'vue-i18n-loader'
