@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/chiaweilee/vue-i18n-export-loader#readme",
   "devDependencies": {
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.2",
     "loader-utils": "^1.1.0",
     "path": "^0.12.7"
   },
