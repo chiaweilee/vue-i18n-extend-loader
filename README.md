@@ -1,4 +1,7 @@
 # vue-i18n-loader2
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/chiaweilee/vue-i18n-loader2.svg)](https://greenkeeper.io/)
+
 🌍 inspire by vue-i18n-loader
 
 ### issue TODO ⚠️
